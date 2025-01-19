@@ -1,0 +1,71 @@
+* {
+    font-family: "scientifica", "Jetbrains Mono NL";
+    /* font-family: "Jetbrains Mono NL"; */
+    color: lightgrey;
+    font-size: 20px;
+}
+
+#waybar{
+    background-color: rgba(0,0,0,0);
+}
+
+#window,
+#clock,
+#battery,
+#pulseaudio,
+#network,
+#bluetooth,
+#cpu,
+#memory,
+#workspaces,
+#backlight,
+#custom-notification {
+    margin: 1px 10px;
+}
+
+#workspaces button{
+    transition: none;
+    border: none;
+    border-radius: 0;
+}
+
+#workspaces button.active{
+    font-weight: bold;
+    transition: none;
+    border: none;
+    border-radius: 0px;
+    box-shadow: 0 1px 0px 0px #ffffff;
+}
+
+#workspaces button:hover{
+    color:grey;
+    background: rgba(0, 0, 0, 0);
+    text-shadow: none;
+}
+
+#cpu.critical {
+    color: #f00;
+}
+
+#battery.critical {
+    color: #F00;
+}
+
+tooltip {
+    background: #1e1e2e;
+    border-radius: 5px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #11111b;
+}
+
+#tray {
+    padding-right:5px;
+    margin-left:5px;
+    /* padding-left:5px; */
+    /* background-color: rgba(0, 0, 0, 0.2); */
+}
+
+#custom-notification {
+    font-family: "Noto Sans Mono";
+}

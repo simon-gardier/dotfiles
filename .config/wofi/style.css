@@ -1,0 +1,68 @@
+* {
+ font-family: "Jetbrains Mono NL";
+}
+
+#input > image.left {
+    display: none;
+}
+
+#input > image.left {
+    -gtk-icon-transform:scaleX(0);
+}
+
+#input > text
+
+window {
+    margin: 0px;
+    border: 1px solid #6777B8;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+#input {
+    border-radius: 2px;
+    padding: 5px 5px;
+    margin: 5px;
+    border: none;
+    color: #f8f8f2;
+    background-color: #44475a;
+}
+
+#inner-box {
+    margin: 5px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+#outer-box {
+    margin: 5px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+#scroll {
+    margin: 0px;
+    border: none;
+}
+
+#text {
+    margin: 5px;
+    border: none;
+    color: #f8f8f2;
+    margin-right: 10px;
+}
+
+#entry.activatable #text {
+    color: #282a36;
+}
+
+#entry > * {
+    color: #f8f8f2;
+}
+
+#entry:selected {
+    background-color: #44475a;
+}
+
+#entry:selected #text {
+    font-weight: bold;
+}

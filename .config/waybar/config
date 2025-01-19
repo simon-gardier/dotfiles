@@ -1,0 +1,119 @@
+{
+    "layer": "top",
+    "position": "top",
+    "mod": "dock",
+    "exclusive": true,
+    "passthrough": false,
+    "gtk-layer-shell": true,
+    "height": 40,
+    "modules-left": [
+        "clock",
+        "hyprland/workspaces"
+    ],
+    "modules-center": [
+        "mpris"
+    ],
+    "modules-right": [
+        "battery",
+        "backlight",
+        "pulseaudio",
+        "hyprland/language",
+        "power-profiles-daemon",
+        "custom/notification",
+        "tray"
+    ],
+    "power-profiles-daemon": {
+        "format": "{icon}",
+        "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
+        "tooltip": true,
+        "format-icons": {
+            "default": "",
+            "performance": "",
+            "balanced": "",
+            "power-saver": ""
+        }
+    },
+    "mpris": {
+        "format": "{player_icon} {title}",
+        "format-paused": "{status_icon} {title}",
+        "player-icons": {
+            "default": "▶",
+            "mpv": "🎵"
+        },
+        "status-icons": {
+            "paused": "⏸"
+        }
+    },
+    "tray": {
+        "icon-size": 18,
+        "spacing": 10
+    },
+    "clock": {
+        "interval": 30,
+        "format": "{:%a, %d %b %Y | %H:%M}",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+    },
+    "backlight": {
+        "device": "intel_backlight",
+        "format": "Lum: {percent}%",
+        "on-scroll-up": "brightnessctl -q set 1%+",
+        "on-scroll-down": "brightnessctl -q set 1%-"
+    },
+    "battery": {
+        "states": {
+            "good": 95,
+            "warning": 40,
+            "critical": 30
+        },
+        "format": "Bat: {capacity}%",
+        "format-charging": " {capacity}%",
+        "format-plugged": " {capacity}%",
+        "format-alt": "Bat: {capacity}%"
+    },
+    "pulseaudio": {
+        "format": "Sound: {volume}%",
+        "tooltip": false,
+        "format-muted": "Sound: (Muted)",
+        "on-click": "pamixer -t",
+        "on-scroll-up": "pamixer -i 5",
+        "on-scroll-down": "pamixer -d 5",
+        "scroll-step": 100,
+        "format-icons": {
+            "headphone": "",
+            "hands-free": "",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": [
+                "",
+                "",
+                ""
+            ]
+        }
+    },
+    "hyprland/language": {
+        "format": "{} ",
+        "format-fr": "FR",
+        "format-en": "US"
+    },
+    "custom/notification": {
+        "format": "{icon}",
+        "format-icons": {
+            "notification": "<span foreground='lightgrey'><sup></sup></span>",
+            "none": "",
+            "dnd-notification": "<span foreground='lightgrey'><sup></sup></span>",
+            "dnd-none": "",
+            "inhibited-notification": "<span foreground='lightgrey'><sup></sup></span>",
+            "inhibited-none": "",
+            "dnd-inhibited-notification": "<span foreground='lightgrey'><sup></sup></span>",
+            "dnd-inhibited-none": ""
+        },
+        "return-type": "json",
+        "exec-if": "which swaync-client",
+        "exec": "swaync-client -swb",
+        "on-click": "swaync-client -t -sw",
+        "on-click-right": "swaync-client -d -sw",
+        "escape": true
+    }
+}
