@@ -1,139 +1,181 @@
 ﻿# Fedora XFCE + Hyprland
 
-- Install hyprland
-sudo dnf install hyprland
-Exit xfce, log in hyprland
-
-- [Optionnal] Mount disk partition at startup
-open disk manager
-> Edit mount options for desired partition
+## OS + Window manager
+- Install [Fedora XFCE](https://fedoraproject.org/spins/xfce)
+- Install hyprland : `sudo dnf install hyprland`
+- Exit xfce, log in hyprland
+[Optionnal] 
+- Mount disk partition at startup
+    - Open disk manager
+    - Edit mount options for desired partition
 
 ## Softwares
 
-- Chrome
-sudo dnf install fedora-workstation-repositories
-sudo dnf config-manager setopt google-chrome.enabled=1
-sudo dnf install google-chrome-stable
-Go to chrome://flags -> Ozone -> Enable Wayland
+### Chrome
+- Installation:
+    ```
+    sudo dnf install fedora-workstation-repositories
+    sudo dnf config-manager setopt google-chrome.enabled=1
+    sudo dnf install google-chrome-stable
+    ```
+- Then, Go to chrome://flags -> Ozone -> Enable Wayland
 
-- Visual studio code
-sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
-echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" | sudo tee /etc/yum.repos.d/vscode.repo > /dev/null
-dnf check-update
-sudo dnf install code # or code-insiders
-sudo vim /usr/share/applications/code.desktop -> Enable wayland with --enable-features=UseOzonePlatform --ozone-platform=wayland  
+### Visual studio code
+- Installation:
+    ```
+    sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
+    echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" | sudo tee /etc/yum.repos.d/vscode.repo > /dev/null
+    dnf check-update
+    sudo dnf install code # or code-insiders
+    ```
 
-- Change display layout
-https://github.com/nwg-piotr/nwg-displays
+### Change display layout (how your screens are placed)
+- Installation: https://github.com/nwg-piotr/nwg-displays
 
-- Embedded development
+### Embedded development
+```
 sudo dnf install arm-none-eabi-gcc-cs
 sudo dnf install openocd
 sudo dnf install texlive-scheme-full
+```
 
-- SSH keys
-sudo chmod 600 ~/.ssh/id_rsa
-sudo chmod 600 ~/.ssh/id_rsa.pub
-ssh-add ~/.ssh/id_rsa
+### SSH keys
+- Place your ssh keys in ~/.ssh
+- Then, run:
+    ```
+    sudo chmod 600 ~/.ssh/id_rsa
+    sudo chmod 600 ~/.ssh/id_rsa.pub
+    ssh-add ~/.ssh/id_rsa
+    ```
+### PIP (Python package manager)
+- Installation: `python -m pip3 install --upgrade pip
 
-- PIP
-python -m pip3 install --upgrade pip
+### Terminal
+- Installation
+    ```
+    sudo dnf install foot
+    sudo dnf install zsh
+    chsh -s $(which zsh)
+    echo $0 #check shell after reboot
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+    ```
 
-- Terminal
-sudo dnf install foot
-sudo dnf install zsh
-chsh -s $(which zsh)
-echo $0 #check shell after rebootf
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-
-## Daemons
-
-- Screen temperature
+## Daemons (Small util programs)
+### Screen temperature (Night mode)
+```
 sudo dnf group install c-development development-tools
 sudo dnf install wlsunset
+```
 
-- Notification center
+### Notification center
+```
 sudo dnf copr enable erikreider/SwayNotificationCenter
 sudo dnf install SwayNotificationCenterd
+```
 
-- Wallpaper
+### Wallpaper
+```
 sudo dnf install hyprpaper
+```
 
-- Volume mixer in waybar
+### Volume mixer in waybar
+```
 sudo dnf install pamixer
+```
 
-- Screenshots
-https://github.com/jtheoof/swappy
-sudo dnf install swappy 
-Script in ~/.config/hypr + ~/.config/swappy
-
+### Screenshots (https://github.com/jtheoof/swappy)
+```
+sudo dnf install swappy
+```
+Note : requires the script in `~/.config/hypr`
 
 ## Terminal tools
-- System infos from terminal
+### System infos from terminal
+```
 sudo dnf install fastfetch
 fastfetch --gen-config
+```
 
-- Ressource monitor from terminal
+### btop (Ressource monitor from terminal)
+```
 sudo dnf install btop
+```
 
 ## Debug tools
-
-- Check window class
+### Check window class
+```
 sudo dnf install hyprprop
+```
+Note : Run hyprprop in the terminal then click on the window your want to identify
 
-- Check key name
+### Check key name
+```
 sudo dnf install wev
+```
 
 ## Themes
+### Hyprland color theme
+Theme from : https://github.com/dracula/hyprland
 
-- Hyprland color theme
-https://github.com/dracula/hyprland
+### Swaync theme
+Theme from : https://github.com/catppuccin/swaync
 
-- Swaync theme
-Theme with https://github.com/catppuccin/swaync
-
-- Icons theme
+### Icons theme
+```
 sudo dnf install papirus-icon-theme
+```
+Note : must be selected in GNOME tweaks / ngw-look (see below)
 
-- Use dark theme
-Change this line in gtk-3.0 and gtk-4.0 config files
+### Apply GTK dark theme
+- Add/Change these lines in gtk-3.0 and gtk-4.0 config files:
+```
 [Settings]
 gtk-application-prefer-dark-theme=1
+```
 
-- Loader theme
+### Loader theme (Loading screen when booting)
+```
 dnf search plymouth-theme-spinfinity
 plymouth-set-default-theme spinfinity
 /usr/libexec/plymouth/plymouth-update-initrd
+```
 
-- Modify applications theme globally
-sudo dnf install arc-theme
-sudo dnf install lxappearance
-sudo dnf install gnome-tweaks
-https://github.com/nwg-piotr/nwg-look
-make build
-sudo make install
-> Select theme + font + icons in parameters
+### Modify applications theme globally
+- Install a theme :
+    ```
+    sudo dnf install arc-theme
+    ``` 
+- Then, select the theme in settings (after download the following gui for settings):
+    ```
+    sudo dnf install lxappearance
+    sudo dnf install gnome-tweaks
+    https://github.com/nwg-piotr/nwg-look
+    make build
+    sudo make install
+    ```
 
-- Lightdm Settings
+### Lightdm settings (Login screen)
+```
 sudo dnf instal lightdm-gtk-greeter-settings
+```
 
 ## Fonts
 
-- Nerd fonts
+### Nerd fonts (font with glyphs, i.e. text icons)
+```
 sudo dnf copr enable che/nerd-fonts
 sudo dnf install nerd-fonts
+```
 
-- Jetbrains font
+### Jetbrains font (nice font for coding)
+```
 sudo dnf copr enable elxreno/jetbrains-mono-fonts
 sudo dnf install jetbrains-mono-fonts
+```
 
-- Pixel font (Monocraft)
-https://github.com/IdreesInc/Monocraft/releases
-Move .ttf to ~/.local/share/fonts
-fc-cache -fv
-
-- Pixel font (Scientifica)
-https://github.com/oppiliappan/scientifica/releases
+### Pixel font (Scientifica)
+- Download from: https://github.com/oppiliappan/scientifica/releases
+- Move .ttf to ~/.local/share/fonts then run: `fc-cache -fv`
 
 ## Commands reminder
 - MAN
@@ -148,12 +190,13 @@ pavucontrol
 rm -rf ~/.config/google-chrome/Singleton*
 
 ## Experimental (other WM) Fedora + SwayFX
-###Install SwayFX
+### SwayFX
 Follow : https://github.com/WillPower3309/swayfx/blob/master/INSTALL-deb.md
 sudo dnf install libwayland-server pcre2-devel wayland-protocols-devel json-c-devel
 Install waylandf-server : sudo dnf install 'pkgconfig(wayland-server)'
 meson setup build from top git dir
 Add add_project_arguments('-Wno-error', language: 'c') to the meson file
 
-### Blur
+### i3 
+#### Blur
 Picom
