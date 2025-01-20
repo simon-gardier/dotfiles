@@ -3,7 +3,7 @@
 
 ## Preview
 <div style="display: flex; justify-content: space-around; align-items: center;">
-  <img src="preview.png" alt="Game menu - default view" style="width: 100%;"/>
+  <img src="preview.png" alt="desktop result" style="width: 100%;"/>
 </div>
 
 ## Disclaimer
