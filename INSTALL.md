@@ -20,6 +20,9 @@
     ```
 - Then, Go to chrome://flags -> Ozone -> Enable Wayland
 
+### Doom emacs
+- Installation: https://github.com/doomemacs/doomemacs/blob/master/docs/getting_started.org#fedora
+
 ### Visual studio code
 - Installation:
     ```
