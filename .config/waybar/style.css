@@ -1,26 +1,17 @@
 * {
     font-family: "scientifica", "Jetbrains Mono NL";
-    /* font-family: "Jetbrains Mono NL"; */
     color: lightgrey;
-    font-size: 20px;
+    font-size: 18px;
+    margin:0;
 }
 
 #waybar{
     background-color: rgba(0,0,0,0);
 }
 
-#window,
-#clock,
-#battery,
-#pulseaudio,
-#network,
-#bluetooth,
-#cpu,
-#memory,
-#workspaces,
-#backlight,
-#custom-notification {
-    margin: 1px 10px;
+.module{
+    margin-bottom: 1px;
+    margin-right: 10px;
 }
 
 #workspaces button{
@@ -60,12 +51,12 @@ tooltip {
 }
 
 #tray {
-    padding-right:5px;
-    margin-left:5px;
-    /* padding-left:5px; */
-    /* background-color: rgba(0, 0, 0, 0.2); */
+    padding-right:10px;
+    padding-left:10px;
+    margin-right: 0px;
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
-#custom-notification {
+/* #custom-notification {
     font-family: "Noto Sans Mono";
-}
+} */

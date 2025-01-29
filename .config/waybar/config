@@ -55,25 +55,26 @@
     },
     "backlight": {
         "device": "intel_backlight",
-        "format": "Lum: {percent}%",
+        "format": "{icon} {percent}%",
         "on-scroll-up": "brightnessctl -q set 1%+",
-        "on-scroll-down": "brightnessctl -q set 1%-"
+        "on-scroll-down": "brightnessctl -q set 1%-",
+        "format-icons": ["☀️"]
     },
     "battery": {
         "states": {
             "good": 95,
-            "warning": 40,
             "critical": 30
         },
-        "format": "Bat: {capacity}%",
+        "format": "{icon}{capacity}%",
         "format-charging": " {capacity}%",
         "format-plugged": " {capacity}%",
-        "format-alt": "Bat: {capacity}%"
+        "format-icons": ["🪫", "🔋"],
+        "max-length": 25
     },
     "pulseaudio": {
-        "format": "Sound: {volume}%",
+        "format": "{icon} {volume}%",
         "tooltip": false,
-        "format-muted": "Sound: (Muted)",
+        "format-muted": "{icon} (muted)",
         "on-click": "pamixer -t",
         "on-scroll-up": "pamixer -i 5",
         "on-scroll-down": "pamixer -d 5",
@@ -93,7 +94,7 @@
         }
     },
     "hyprland/language": {
-        "format": "{} ",
+        "format": "⌨️ {}",
         "format-fr": "FR",
         "format-en": "US"
     },
