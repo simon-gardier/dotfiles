@@ -57,7 +57,8 @@ sudo ./install.sh
 
 ### Embedded development
 ```
-sudo dnf install -y arm-none-eabi-gcc-cs
+sudo dnf -y copr enable rleh/arm-none-eabi-gdb
+sudo dnf install -y arm-none-eabi-gdb arm-none-eabi-gcc arm-none-eabi-binutils arm-none-eabi-newlib
 sudo dnf install -y openocd
 sudo dnf install -y texlive-scheme-full
 ```
