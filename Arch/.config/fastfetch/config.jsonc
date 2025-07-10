@@ -1,0 +1,23 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+  "modules": [
+    "os",
+    "uptime",
+    "shell",
+    "display",
+    "wm",
+    "wmtheme",
+    "terminal",
+    "cpu",
+    "gpu",
+    "memory",
+    "localip",
+    "battery",
+    {
+      "type": "custom",
+      "format": "\nPRINT        = Screenshot\n  + B       = Zen (Browser)\n  + D       = Do not disturb\n  + E       = Thunar (File manager)\n  + L       = Lock screen\n  + M       = Log out\n  + P       = Color picker\n  + Q       = Foot (Terminal)\n  + V       = Toggle floating",
+      "key": "Shortcuts"
+    },
+    "colors"
+  ]
+}

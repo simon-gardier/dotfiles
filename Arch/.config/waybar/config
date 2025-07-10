@@ -1,0 +1,117 @@
+{
+    "layer": "top",
+    "margin-left": 3,
+    "margin-right": 3,
+    "margin-top": 3,
+    "margin-bottom": 6,
+    "position": "top",
+    "mod": "dock",
+    "exclusive": true,
+    "passthrough": false,
+    "gtk-layer-shell": true,
+    "height": 40,
+    "modules-left": [
+        "hyprland/workspaces",
+        "custom/separator",
+        "hyprland/window"
+    ],
+    "hyprland/workspaces": {
+        "sort-by-number": true,
+        "disable-scroll": false,
+        "on-scroll-up": "hyprctl dispatch workspace -1",
+        "on-scroll-down": "hyprctl dispatch workspace +1",
+            "format": "{icon}",
+            "format-icons": {
+                "1": "α",
+                "2": "β",
+                "3": "γ",
+                "4": "δ",
+                "5": "ε",
+                "6": "ζ",
+                "7": "η",
+                "8": "θ",
+                "9": "ι",
+                "10": "κ"
+            },
+            "persistent_workspaces": {
+                    "*": 10
+            }
+    },
+    "modules-right": [
+        "custom/tuned",
+        "custom/separator",
+        "backlight",
+        "custom/separator",
+        "pulseaudio",
+        "custom/audio_output",
+        "custom/separator",
+        "battery",
+        "custom/separator",
+        "network",
+        "custom/separator",
+        "clock",
+        "tray"
+    ],
+    "custom/separator": {
+        "format": "│",
+        "tooltip": false
+    },
+    "custom/tuned": {
+        "exec": "~/.scripts/tuned.sh",
+        "interval": 5,
+        "return-type": "json",
+        "format": "{}",
+        "tooltip": true,
+        "on-click": "~/.scripts/tuned-toggle.sh"
+    },
+    "backlight": {
+        "device": "intel_backlight",
+        "tooltip": false,
+        "format": "<span color='#5b84d1'>LIGHT</span> {percent}%",
+        "on-scroll-up": "brightnessctl -q set 10%+",
+        "on-scroll-down": "brightnessctl -q set 10%-"
+    },
+    "pulseaudio": {
+        "format": "<span color='#5b84d1'>VOL</span> {volume}%",
+        "format-muted": "<span color='#5b84d1'>VOL</span><span color='#d15b5b'>  0%</span>",
+        "tooltip": false,
+        "on-click": "pamixer -t",
+        "on-scroll-up": "pamixer -i 5",
+        "on-scroll-down": "pamixer -d 5",
+        "scroll-step": 5
+    },
+    "custom/audio_output": {
+        "exec": "~/.scripts/audio_output.sh",
+        "interval": 5,
+        "tooltip": false,
+        "on-click": "~/.scripts/audio_output.sh next"
+    },
+    "battery": {
+        "states": {
+            "good": 95,
+            "critical": 30
+        },
+        "format": "<span color='#5b84d1'>BAT</span> {capacity}%",
+        "max-length": 25
+    },
+    "network": {
+        "format": "<span color='#a3e88c'>{ifname}</span>",
+        "format-wifi": "<span color='#a3e88c'>{essid}</span> ({signalStrength}%)",
+        "format-ethernet": "<span color='#a3e88c'>{ipaddr}</span>/{cidr}",
+        "format-disconnected": "",
+        "tooltip-format": "{ifname} via {gwaddr} 󰊗",
+        "tooltip-format-wifi": "{essid} ({signalStrength}%) ",
+        "tooltip-format-ethernet": "{ifname} ",
+        "tooltip-format-disconnected": "Disconnected",
+        "max-length": 50
+    },
+    "clock": {
+        "interval": 30,
+        "format": "<span color='#5b84d1'>{:%a. %d - %H:%M}</span>",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+    },
+    "tray": {
+        "icon-size": 18,
+        "spacing": 10
+    }
+}
