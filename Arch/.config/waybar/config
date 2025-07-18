@@ -37,32 +37,31 @@
                     "*": 10
             }
     },
-    "modules-right": [
-        "custom/tuned",
-        "custom/separator",
+    "modules-center": [
         "backlight",
         "custom/separator",
         "pulseaudio",
-        "custom/audio_output",
-        "custom/separator",
+        "custom/audio_output"
+    
+    ],
+    "modules-right": [
         "battery",
+        "custom/tuned",
+        "custom/separator",
+        "cpu",
+        "custom/separator",
+        "memory",
         "custom/separator",
         "network",
         "custom/separator",
         "clock",
+        "custom/shortcuts",
+        "custom/dunst",
         "tray"
     ],
     "custom/separator": {
         "format": "│",
         "tooltip": false
-    },
-    "custom/tuned": {
-        "exec": "~/.scripts/tuned.sh",
-        "interval": 5,
-        "return-type": "json",
-        "format": "{}",
-        "tooltip": true,
-        "on-click": "~/.scripts/tuned-toggle.sh"
     },
     "backlight": {
         "device": "intel_backlight",
@@ -94,6 +93,32 @@
         "format": "<span color='#5b84d1'>BAT</span> {capacity}%",
         "max-length": 25
     },
+    "custom/tuned": {
+        "exec": "~/.scripts/tuned.sh",
+        "interval": 5,
+        "return-type": "json",
+        "format": "{}",
+        "tooltip": true,
+        "on-click": "~/.scripts/tuned-toggle.sh"
+    },
+    "cpu": {
+        "interval": 1,
+        "format": "<span color='#5b84d1'>CPU</span> {icon0}{icon1}{icon2}{icon3}{icon4}{icon5}{icon6}{icon7}",
+        "format-icons": [
+            "<span color='#69ff94'>▁</span>", // green
+            "<span color='#2aa9ff'>▂</span>", // blue
+            "<span color='#f8f8f2'>▃</span>", // white
+            "<span color='#f8f8f2'>▄</span>", // white
+            "<span color='#ffffa5'>▅</span>", // yellow
+            "<span color='#ffffa5'>▆</span>", // yellow
+            "<span color='#ff9977'>▇</span>", // orange
+            "<span color='#dd532e'>█</span>"  // red
+        ]
+    },
+    "memory": {
+        "interval": 30,
+        "format": "<span color='#5b84d1'>RAM</span> {used:0.0f}G/{total:0.0f}G"
+    },
     "network": {
         "format": "<span color='#a3e88c'>{ifname}</span>",
         "format-wifi": "<span color='#a3e88c'>{essid}</span> ({signalStrength}%)",
@@ -109,6 +134,18 @@
         "interval": 30,
         "format": "<span color='#5b84d1'>{:%a. %d - %H:%M}</span>",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+    },
+    "custom/shortcuts": {
+        "format": "⌨️",
+        "tooltip": true,
+        "tooltip-format": "PrtSc\t= Screenshot\n + B\t= Zen (Browser)\n + D\t= Do not disturb\n + E\t= Thunar (File manager)\n + L\t= Lock screen\n + M\t= Log out\n + P\t= Color picker\n + Q\t= Foot (Terminal)\n + S\t= Sleep\n + V\t= Toggle floating",
+        "interval": 9999999
+    },
+    "custom/dunst": {
+        "exec": "~/.scripts/dunst-status.sh",
+        "interval": 5,
+        "return-type": "json",
+        "tooltip": false
     },
     "tray": {
         "icon-size": 18,
