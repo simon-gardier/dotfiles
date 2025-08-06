@@ -5,12 +5,10 @@
     - Choose ly for logging manager
 
 ## Install Yay package manager
-    sudo pacman -S --needed git base-devel && git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si
+    `sudo pacman -S --needed git base-devel && git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si`
 
 ## Install Packages
-    sudo pacman -S arm-none-eabi-gcc openocd plocate hyprlock hypridle slurp grim imagemagick swappy wl-clipboard hyprpaper imagemagick file gnome-keyring libsecret nwg-look qt5ct qt6ct kvantum tar python-pywal ttf-cascadia-code-nerd ttf-cascadia-mono-nerd ttf-fira-code ttf-fira-mono ttf-fira-sans ttf-firacode-nerd ttf-iosevka-nerd ttf-iosevkaterm-nerd ttf-jetbrains-mono-nerd ttf-jetbrains-mono ttf-nerd-fonts-symbols ttf-nerd-fonts-symbols ttf-nerd-fonts-symbols-mono gnome-font-viewer tuned-ppd network-manager-applet gnome-icon-theme hicolor-icon-theme xdg-desktop-portal xdg-desktop-portal-gtk xdg-desktop-portal-hyprland blueman bluez bluez-utils xdg-user-dirs thunar-volman gvfs udisks2 gnome-disk-utility deluge qt5-wayland qt6-wayland neovim tmux
-  
-    yay -S zen-browser-bin visual-studio-code-bin hyprpicker xdg-desktop-portal-hyprland polkit polkit-gnome bibata-cursor-theme j7z ttf-meslo-nerd-font-powerlevel10k hyprprop
+    `yay -S` all pakcages from the pkglist.txt file. 
 
 
 ### Following commands
