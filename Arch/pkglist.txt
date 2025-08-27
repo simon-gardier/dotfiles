@@ -1,233 +1,266 @@
-arm-none-eabi-binutils
-arm-none-eabi-gcc
-arm-none-eabi-gdb
-arm-none-eabi-newlib
-base
-base-devel
-bc
-bibata-cursor-theme
-blueman
-bluez-utils
-brave-bin
-brightnessctl
-btop
-clang
-cliphist
-cryptomator
-deluge
-deluge-gtk
-discord
-dosfstools
-dunst
-efibootmgr
-fastfetch
-firefox
-flatpak
-foot
-git
-gnome-disk-utility
-gnome-font-viewer
-gnome-keyring
-gpg-crypter
-grub
-gst-plugin-pipewire
-gvfs
-htop
-hypridle
-hyprland
-hyprlock
-hyprpaper
-hyprpicker
-hyprpolkitagent
-hyprprop-git
-hyprshot
-hyprsunset
-imagemagick
-intel-media-driver
-intel-ucode
-iwd
-jdk-openjdk
-kvantum
-kvantum-qt5
-libpulse
-libreoffice-fresh
-libva-intel-driver
-linux
-linux-firmware
-ly
-man-db
-minecraft-launcher
-miniconda3
-mtools
-nano
-neovim
-network-manager-applet
-networkmanager
-nextcloud-client
-noto-fonts
-noto-fonts-emoji
-nss-mdns
-nwg-displays
-nwg-look
-openocd
-os-prober
-otf-aurulent-nerd
-otf-codenewroman-nerd
-otf-comicshanns-nerd
-otf-commit-mono-nerd
-otf-droid-nerd
-otf-firamono-nerd
-otf-font-awesome
-otf-geist-mono-nerd
-otf-hasklig-nerd
-otf-hermit-nerd
-otf-monaspace-nerd
-otf-opendyslexic-nerd
-otf-overpass-nerd
-pamixer
-papirus-icon-theme
-pavucontrol
-pipewire
-pipewire-alsa
-pipewire-jack
-pipewire-pulse
-plocate
-preload
-python-numpy
-python-pip
-python-pipx
-python-pywal
-qt5-wayland
-qt5ct
-qt6-wayland
-qt6ct
-refind
-rofi
-rose-pine-hyprcursor
-rpi-imager
-smartmontools
-sof-firmware
-speedtest-cli
-steam
-swappy
-texlive-basic
-texlive-bibtexextra
-texlive-binextra
-texlive-context
-texlive-fontsextra
-texlive-fontsrecommended
-texlive-fontutils
-texlive-formatsextra
-texlive-games
-texlive-humanities
-texlive-latex
-texlive-latexextra
-texlive-latexrecommended
-texlive-luatex
-texlive-mathscience
-texlive-metapost
-texlive-music
-texlive-pictures
-texlive-plaingeneric
-texlive-pstricks
-texlive-publishers
-texlive-xetex
-thunar
-thunar-volman
-tmux
-trash-cli
-ttf-0xproto-nerd
-ttf-3270-nerd
-ttf-agave-nerd
-ttf-anonymouspro-nerd
-ttf-arimo-nerd
-ttf-bigblueterminal-nerd
-ttf-bitstream-vera-mono-nerd
-ttf-cascadia-code-nerd
-ttf-cascadia-mono-nerd
-ttf-cousine-nerd
-ttf-d2coding
-ttf-d2coding-nerd
-ttf-daddytime-mono-nerd
-ttf-dejavu-nerd
-ttf-envycoder-nerd
-ttf-fantasque-nerd
-ttf-fira-code
-ttf-fira-mono
-ttf-fira-sans
-ttf-firacode-nerd
-ttf-go-nerd
-ttf-gohu-nerd
-ttf-hack-nerd
-ttf-heavydata-nerd
-ttf-iawriter-nerd
-ttf-ibmplex-mono-nerd
-ttf-inconsolata-go-nerd
-ttf-inconsolata-lgc-nerd
-ttf-inconsolata-nerd
-ttf-intone-nerd
-ttf-iosevka-nerd
-ttf-iosevkaterm-nerd
-ttf-iosevkatermslab-nerd
-ttf-jetbrains-mono
-ttf-jetbrains-mono-nerd
-ttf-lekton-nerd
-ttf-liberation-mono-nerd
-ttf-lilex-nerd
-ttf-martian-mono-nerd
-ttf-meslo-nerd
-ttf-meslo-nerd-font-powerlevel10k
-ttf-monofur-nerd
-ttf-monoid-nerd
-ttf-mononoki-nerd
-ttf-mplus-nerd
-ttf-nerd-fonts-symbols
-ttf-nerd-fonts-symbols-mono
-ttf-noto-nerd
-ttf-profont-nerd
-ttf-proggyclean-nerd
-ttf-recursive-nerd
-ttf-roboto-mono-nerd
-ttf-sharetech-mono-nerd
-ttf-sourcecodepro-nerd
-ttf-space-mono-nerd
-ttf-terminus-nerd
-ttf-tinos-nerd
-ttf-ubuntu-mono-nerd
-ttf-ubuntu-nerd
-ttf-victor-mono-nerd
-ttf-zed-mono-nerd
-ufw
-unzip
-uwsm
-vi
-vim
-visual-studio-code-bin
-vlc
-vulkan-intel
-vulkan-nouveau
-vulkan-radeon
-waybar
-wev
-wget
-wireless_tools
-wireplumber
-woff2-font-awesome
-wofi
-xarchiver
-xdg-desktop-portal-gnome
-xdg-desktop-portal-gtk
-xdg-desktop-portal-hyprland
-xdg-user-dirs
-xf86-video-amdgpu
-xf86-video-ati
-xf86-video-nouveau
-xorg-server
-xorg-xinit
-yay
-yay-debug
-zotero
-zram-generator
-zsh
-zsh-autocomplete
-zsh-autosuggestions
+adobe-source-han-sans-cn-fonts 2.005-1
+adobe-source-han-serif-cn-fonts 2.003-1
+aribb24 1.0.3-4
+arm-none-eabi-binutils 2.43-1
+arm-none-eabi-gcc 14.2.0-1
+arm-none-eabi-gdb 16.2-1
+arm-none-eabi-newlib 4.5.0.20241231-1
+base 3-2
+base-devel 1-2
+bc 1.08.2-1
+bibata-cursor-theme 2.0.7-1
+bleachbit 5.0.1-1
+blueman 2.4.6-1
+bluez-utils 5.83-1
+brave-bin 1:1.81.136-1
+brightnessctl 0.5.1-3
+btop 1.4.4-1
+clang 20.1.8-1
+cliphist 1:0.6.1-1
+cryptomator 1.17.1-1
+deluge 1:2.2.0-1
+deluge-gtk 1:2.2.0-1
+discord 1:0.0.106-1
+dosfstools 4.2-5
+dunst 1.12.2-1
+efibootmgr 18-3
+fastfetch 2.50.2-1
+ffmpeg4.4 4.4.6-2
+filezilla 3.69.3-1
+firefox 142.0-1
+flatpak 1:1.16.1-1
+foot 1.23.1-1
+gdb-dashboard 0.17.4-1
+git 2.50.1-3
+git-filter-repo 2.47.0-2
+gnome-disk-utility 46.1-2
+gnome-font-viewer 48.0-1
+gnome-keyring 1:48.0-1
+go 2:1.24.6-1
+gpg-crypter 0.4.1-5
+graphviz 13.1.2-1
+grub 2:2.12.r292.g73d1c959-1
+gst-plugin-pipewire 1:1.4.7-1
+gvfs 1.57.2-4
+htop 3.4.1-1
+hypridle 0.1.6-6
+hyprland 0.50.1-1
+hyprlock 0.9.1-1
+hyprpaper 0.7.5-3
+hyprpicker 0.4.5-4
+hyprpolkitagent 0.1.3-1
+hyprprop-git 23.f106bbd-1
+hyprshot 1.3.0-4
+hyprsunset 0.3.2-1
+imagemagick 7.1.2.1-1
+intel-media-driver 25.2.6-1
+intel-ucode 20250812-1
+iwd 3.9-1
+jdk-openjdk 24.0.2.u12-1
+jellyfin-media-player 1.12.0-3
+ktouch 25.08.0-1
+kvantum 1.1.5-1
+kvantum-qt5 1.1.5-1
+libdca 0.0.7-2
+libdvbpsi 1:1.3.3-3
+libmad 0.15.1b-10
+libmatroska 1.7.1-2
+libmpcdec 1:0.1+r475-6
+libmpeg2 0.5.1-11
+libpulse 17.0+r43+g3e2bb8a1e-1
+libreoffice-fresh 25.8.0-1
+libtar 1.2.20-7
+libupnp 1.14.24-1
+libva-intel-driver 2.4.1-5
+linux 6.16.3.arch1-1
+linux-firmware 20250808-1
+llvm 20.1.8-1
+ly 1.1.2-1
+man-db 2.13.1-1
+minecraft-launcher 1:2.1.3-3
+miniconda3 25.5.1.1-2
+mtools 1:4.0.49-1
+nano 8.6-1
+neovim 0.11.3-1
+network-manager-applet 1.36.0-1
+networkmanager 1.54.0-1
+noto-fonts 1:2025.08.01-1
+noto-fonts-emoji 1:2.048-1
+nss-mdns 0.15.1-2
+nwg-displays 0.3.25-1
+nwg-look 1.0.6-1
+openocd 1:0.12.0-3
+os-prober 1.83-1
+otf-aurulent-nerd 3.4.0-1
+otf-codenewroman-nerd 3.4.0-1
+otf-comicshanns-nerd 3.4.0-1
+otf-commit-mono-nerd 3.4.0-1
+otf-droid-nerd 3.4.0-1
+otf-firamono-nerd 3.4.0-1
+otf-font-awesome 7.0.0-4
+otf-geist-mono-nerd 3.4.0-1
+otf-hasklig-nerd 3.4.0-1
+otf-hermit-nerd 3.4.0-1
+otf-monaspace-nerd 3.4.0-1
+otf-opendyslexic-nerd 3.4.0-1
+otf-overpass-nerd 3.4.0-1
+outlook-for-linux-bin 1.3.13-1
+pacman-contrib 1.12.0-1
+pakbak-git 20190412-1
+pamixer 1.6-3
+papirus-icon-theme 20250501-1
+pavucontrol 1:6.1-1
+pipewire 1:1.4.7-1
+pipewire-alsa 1:1.4.7-1
+pipewire-jack 1:1.4.7-1
+pipewire-pulse 1:1.4.7-1
+plocate 1.1.23-1
+preload 0.6.4-9
+python-ipykernel 6.30.1-1
+python-numpy 2.3.2-1
+python-opencv 4.12.0-2
+python-pip 25.2-1
+python-pipx 1.7.1-2
+python-pyinotify 0.9.6-15
+python-pywal 3.3.0-10
+python-yaml 6.0.2-2
+qt5-wayland 5.15.17+kde+r57-1
+qt5ct 1.9-1
+qt6-wayland 6.9.1-1
+qt6ct 0.10-4
+refind 0.14.2-1
+rmlint-git 2.10.3.r3.ga7e1df4b-1
+rofi 1.7.9.1-1
+rose-pine-hyprcursor v0.3.2.r0.d2c0e680-1
+rpi-imager 1.9.6-1
+rsync 3.4.1-2
+rust 1:1.89.0-1
+smartmontools 7.5-1
+smem 1.5-8
+sof-firmware 2025.05.1-1
+speedtest-cli 2.1.3-9
+steam 1.0.0.82-2
+swappy 1.7.1-1
+texlive-basic 2025.2-2
+texlive-bibtexextra 2025.2-2
+texlive-binextra 2025.2-2
+texlive-context 2025.2-2
+texlive-fontsextra 2025.2-2
+texlive-fontsrecommended 2025.2-2
+texlive-fontutils 2025.2-2
+texlive-formatsextra 2025.2-2
+texlive-games 2025.2-2
+texlive-humanities 2025.2-2
+texlive-latex 2025.2-2
+texlive-latexextra 2025.2-2
+texlive-latexrecommended 2025.2-2
+texlive-luatex 2025.2-2
+texlive-mathscience 2025.2-2
+texlive-metapost 2025.2-2
+texlive-music 2025.2-2
+texlive-pictures 2025.2-2
+texlive-plaingeneric 2025.2-2
+texlive-pstricks 2025.2-2
+texlive-publishers 2025.2-2
+texlive-xetex 2025.2-2
+thunar 4.20.4-1
+thunar-volman 4.20.0-2
+tmux 3.5_a-1
+trash-cli 0.24.5.26-2
+ttf-0xproto-nerd 3.4.0-1
+ttf-3270-nerd 3.4.0-1
+ttf-agave-nerd 3.4.0-1
+ttf-anonymouspro-nerd 3.4.0-1
+ttf-arimo-nerd 3.4.0-1
+ttf-bigblueterminal-nerd 3.4.0-1
+ttf-bitstream-vera-mono-nerd 3.4.0-1
+ttf-cascadia-code-nerd 3.4.0-1
+ttf-cascadia-mono-nerd 3.4.0-1
+ttf-cousine-nerd 3.4.0-1
+ttf-d2coding 1.3.2-2
+ttf-d2coding-nerd 3.4.0-1
+ttf-daddytime-mono-nerd 3.4.0-1
+ttf-dejavu-nerd 3.4.0-1
+ttf-envycoder-nerd 3.4.0-1
+ttf-fantasque-nerd 3.4.0-1
+ttf-fira-code 6.2-2
+ttf-fira-mono 2:3.206-4
+ttf-fira-sans 1:4.301-2
+ttf-firacode-nerd 3.4.0-1
+ttf-go-nerd 3.4.0-1
+ttf-gohu-nerd 3.4.0-1
+ttf-hack-nerd 3.4.0-1
+ttf-heavydata-nerd 3.4.0-1
+ttf-iawriter-nerd 3.4.0-1
+ttf-ibmplex-mono-nerd 3.4.0-1
+ttf-inconsolata-go-nerd 3.4.0-1
+ttf-inconsolata-lgc-nerd 3.4.0-1
+ttf-inconsolata-nerd 3.4.0-1
+ttf-intone-nerd 3.4.0-1
+ttf-iosevka-nerd 3.4.0-1
+ttf-iosevkaterm-nerd 3.4.0-1
+ttf-iosevkatermslab-nerd 3.4.0-1
+ttf-jetbrains-mono 2.304-2
+ttf-jetbrains-mono-nerd 3.4.0-1
+ttf-lekton-nerd 3.4.0-1
+ttf-liberation-mono-nerd 3.4.0-1
+ttf-lilex-nerd 3.4.0-1
+ttf-martian-mono-nerd 3.4.0-1
+ttf-meslo-nerd 3.4.0-1
+ttf-meslo-nerd-font-powerlevel10k 2.3.3-1
+ttf-monofur-nerd 3.4.0-1
+ttf-monoid-nerd 3.4.0-1
+ttf-mononoki-nerd 3.4.0-1
+ttf-mplus-nerd 3.4.0-1
+ttf-ms-win11-auto 10.0.26100.1742-4
+ttf-nerd-fonts-symbols 3.4.0-1
+ttf-nerd-fonts-symbols-mono 3.4.0-1
+ttf-noto-nerd 3.4.0-1
+ttf-profont-nerd 3.4.0-1
+ttf-proggyclean-nerd 3.4.0-1
+ttf-recursive-nerd 3.4.0-1
+ttf-roboto-mono-nerd 3.4.0-1
+ttf-sharetech-mono-nerd 3.4.0-1
+ttf-sourcecodepro-nerd 3.4.0-1
+ttf-space-mono-nerd 3.4.0-1
+ttf-terminus-nerd 3.4.0-1
+ttf-tinos-nerd 3.4.0-1
+ttf-ubuntu-mono-nerd 3.4.0-1
+ttf-ubuntu-nerd 3.4.0-1
+ttf-victor-mono-nerd 3.4.0-1
+ttf-zed-mono-nerd 3.4.0-1
+tuned 2.25.1-1
+ufw 0.36.2-5
+unzip 6.0-23
+uwsm 0.23.2-1
+vi 1:070224-6
+vim 9.1.1623-1
+visual-studio-code-bin 1.103.1-1
+vlc 3.0.21-27
+vulkan-intel 1:25.2.1-2
+vulkan-nouveau 1:25.2.1-2
+vulkan-radeon 1:25.2.1-2
+waybar 0.14.0-1
+wev 1.1.0-1
+wget 1.25.0-2
+wireless_tools 30.pre9-4
+wireplumber 0.5.10-1
+woff2-font-awesome 7.0.0-4
+wofi 1.5.1-1
+xarchiver 0.5.4.25-1
+xdg-desktop-portal-gnome 48.0-2
+xdg-desktop-portal-gtk 1.15.3-1
+xdg-desktop-portal-hyprland 1.3.10-1
+xdg-user-dirs 0.18-2
+xf86-video-amdgpu 25.0.0-1
+xf86-video-ati 1:22.0.0-2
+xf86-video-nouveau 1.0.18-1
+xorg-server 21.1.18-2
+xorg-xinit 1.4.4-1
+yay 12.5.0-1
+yay-debug 12.5.0-1
+zotero 7.0.24-1
+zram-generator 1.2.1-1
+zsh 5.9-5
+zsh-autocomplete 25.03.19-1
+zsh-autosuggestions 0.7.1-1
