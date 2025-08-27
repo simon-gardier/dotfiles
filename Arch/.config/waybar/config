@@ -3,9 +3,11 @@
     "margin-left": 3,
     "margin-right": 3,
     "margin-top": 3,
-    "margin-bottom": 6,
+    "margin-bottom": 3,
     "position": "top",
     "mod": "dock",
+    "reload_style_on_change": false,
+    "start_hidden": false,
     "exclusive": true,
     "passthrough": false,
     "gtk-layer-shell": true,
@@ -15,34 +17,11 @@
         "custom/separator",
         "hyprland/window"
     ],
-    "hyprland/workspaces": {
-        "sort-by-number": true,
-        "disable-scroll": false,
-        "on-scroll-up": "hyprctl dispatch workspace -1",
-        "on-scroll-down": "hyprctl dispatch workspace +1",
-            "format": "{icon}",
-            "format-icons": {
-                "1": "α",
-                "2": "β",
-                "3": "γ",
-                "4": "δ",
-                "5": "ε",
-                "6": "ζ",
-                "7": "η",
-                "8": "θ",
-                "9": "ι",
-                "10": "κ"
-            },
-            "persistent_workspaces": {
-                    "*": 10
-            }
-    },
     "modules-center": [
         "backlight",
         "custom/separator",
         "pulseaudio",
         "custom/audio_output"
-    
     ],
     "modules-right": [
         "battery",
@@ -56,9 +35,16 @@
         "custom/separator",
         "clock",
         "custom/shortcuts",
+        "idle_inhibitor",
         "custom/dunst",
         "tray"
     ],
+    "hyprland/workspaces": {
+        "sort-by-number": true,
+        "disable-scroll": false,
+        "on-scroll-up": "hyprctl dispatch workspace -1",
+        "on-scroll-down": "hyprctl dispatch workspace +1"
+    },
     "custom/separator": {
         "format": "│",
         "tooltip": false
@@ -105,14 +91,14 @@
         "interval": 1,
         "format": "<span color='#5b84d1'>CPU</span> {icon0}{icon1}{icon2}{icon3}{icon4}{icon5}{icon6}{icon7}",
         "format-icons": [
-            "<span color='#69ff94'>▁</span>", // green
-            "<span color='#2aa9ff'>▂</span>", // blue
-            "<span color='#f8f8f2'>▃</span>", // white
-            "<span color='#f8f8f2'>▄</span>", // white
-            "<span color='#ffffa5'>▅</span>", // yellow
-            "<span color='#ffffa5'>▆</span>", // yellow
-            "<span color='#ff9977'>▇</span>", // orange
-            "<span color='#dd532e'>█</span>"  // red
+            "<span color='#69ff94'>▁</span>",
+            "<span color='#2aa9ff'>▂</span>",
+            "<span color='#f8f8f2'>▃</span>",
+            "<span color='#f8f8f2'>▄</span>",
+            "<span color='#ffffa5'>▅</span>",
+            "<span color='#ffffa5'>▆</span>",
+            "<span color='#ff9977'>▇</span>",
+            "<span color='#dd532e'>█</span>"
         ]
     },
     "memory": {
@@ -146,6 +132,13 @@
         "interval": 5,
         "return-type": "json",
         "tooltip": false
+    },
+    "idle_inhibitor": {
+    	"format": "{icon}",
+    	"format-icons": {
+        	"activated": "☕",
+        	"deactivated": "💤"
+    	}
     },
     "tray": {
         "icon-size": 18,
