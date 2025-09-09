@@ -1,0 +1,11 @@
+@define-color foreground #d8dee9;
+@define-color background rgba(0,0,0,0);
+
+tooltip {
+    background: #1e1e2e;
+    border-radius: 5px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #11111b;
+}
+
